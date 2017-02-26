@@ -1,0 +1,1371 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] javaparser-parent
+[INFO] javaparser-core
+[INFO] javaparser-testing
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building javaparser-parent 2.2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ javaparser-parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ javaparser-parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ javaparser-parent ---
+[INFO] Installing /Users/StarRUC/git/javaparser/pom.xml to /Users/StarRUC/.m2/repository/com/github/javaparser/javaparser-parent/2.2.3-SNAPSHOT/javaparser-parent-2.2.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building javaparser-core 2.2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ javaparser-core ---
+[INFO] Deleting /Users/StarRUC/git/javaparser/javaparser-core/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ javaparser-core ---
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.6:javacc (javacc) @ javaparser-core ---
+Java Compiler Compiler Version 5.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file /Users/StarRUC/git/javaparser/javaparser-core/src/main/javacc/java_1_8.jj . . .
+File "TokenMgrError.java" does not exist.  Will create one.
+File "ParseException.java" does not exist.  Will create one.
+File "Token.java" does not exist.  Will create one.
+File "JavaCharStream.java" does not exist.  Will create one.
+Parser generated successfully.
+[INFO] Processed 1 grammar
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ javaparser-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/StarRUC/git/javaparser/javaparser-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ javaparser-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 132 source files to /Users/StarRUC/git/javaparser/javaparser-core/target/classes
+[WARNING] /Users/StarRUC/git/javaparser/javaparser-core/src/main/java/com/github/javaparser/TestMethodChangeWithVisitor.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/StarRUC/git/javaparser/javaparser-core/src/main/java/com/github/javaparser/TestMethodChangeWithVisitor.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ javaparser-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/StarRUC/git/javaparser/javaparser-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ javaparser-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ javaparser-core ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ javaparser-core ---
+[INFO] Building jar: /Users/StarRUC/git/javaparser/javaparser-core/target/javaparser-core-2.2.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.11:check (animal-sniffer) @ javaparser-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-versions) @ javaparser-core ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ javaparser-core ---
+[INFO] Installing /Users/StarRUC/git/javaparser/javaparser-core/target/javaparser-core-2.2.3-SNAPSHOT.jar to /Users/StarRUC/.m2/repository/com/github/javaparser/javaparser-core/2.2.3-SNAPSHOT/javaparser-core-2.2.3-SNAPSHOT.jar
+[INFO] Installing /Users/StarRUC/git/javaparser/javaparser-core/pom.xml to /Users/StarRUC/.m2/repository/com/github/javaparser/javaparser-core/2.2.3-SNAPSHOT/javaparser-core-2.2.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building javaparser-testing 2.2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ javaparser-testing ---
+[INFO] Deleting /Users/StarRUC/git/javaparser/javaparser-testing/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ javaparser-testing ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (jacoco-initialize) @ javaparser-testing ---
+[INFO] argLine set to -javaagent:/Users/StarRUC/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/Users/StarRUC/git/javaparser/javaparser-testing/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ javaparser-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/StarRUC/git/javaparser/javaparser-testing/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ javaparser-testing ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ javaparser-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ javaparser-testing ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /Users/StarRUC/git/javaparser/javaparser-testing/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ javaparser-testing ---
+[INFO] Surefire report directory: /Users/StarRUC/git/javaparser/javaparser-testing/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+objc[1066]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/bin/java and /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will be used. Which one is undefined.
+Running com.github.javaparser.bdd.CommentParsingTest
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story com/github/javaparser/bdd/comment_attribution_scenarios.story
+
+(com/github/javaparser/bdd/comment_attribution_scenarios.story)
+Scenario: A Class With Line Comments is processed by the Java Parser
+Given the class:
+package japa.parser.comments;
+
+public class ClassWithLineComments {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+        // third comment
+        // fourth comment
+    }
+}
+When the class is parsed by the Java parser
+Then the compilation unit is not commented
+Then the compilation unit has 0 orphan comments
+Then class 1 has 4 total contained comments
+Then method 1 in class 1 has 4 total contained comments
+Then method 1 in class 1 has 0 orphan comments
+Then block statement in method 1 in class 1 has 4 total contained comments
+Then block statement in method 1 in class 1 has 3 orphan comments
+
+Scenario: A Class With Line Comments is processed by the Java Parser
+Given the class:
+package japa.parser.comments;
+
+/**Javadoc associated with the class*/
+public class ClassWithOrphanComments {
+    //a first comment floating in the class
+
+    //comment associated to the method
+    void foo(){
+        /*comment floating inside the method*/
+    }
+
+    //a second comment floating in the class
+}
+
+//Orphan comment inside the CompilationUnit
+When the class is parsed by the Java parser
+Then the compilation unit is not commented
+Then the compilation unit has 6 contained comments
+Then the compilation unit orphan comment 1 is "Orphan comment inside the CompilationUnit"
+Then class 1 orphan comment 1 is "a first comment floating in the class"
+Then class 1 orphan comment 2 is "a second comment floating in the class"
+Then class 1 is commented "Javadoc associated with the class"
+Then class 1 has 4 total contained comments
+Then method 1 in class 1 has 0 orphan comments
+Then method 1 in class 1 is commented "comment associated to the method"
+Then comment 1 in method 1 in class 1 is "comment floating inside the method"
+Then block statement in method 1 in class 1 orphan comment 1 is "comment floating inside the method"
+
+Scenario: A Class With Orphan Comment in Class Declaration is parsed by the Java Parser
+Given the class:
+class /*Comment1*/ A {
+    //comment2
+    // comment3
+    int a;
+    /**comment4
+    *
+    * */
+    //comment5
+}
+When the class is parsed by the Java parser
+Then class 1 is not commented
+Then class 1 orphan comment 1 is "Comment1"
+
+Scenario: A Class With Line Comments in Multiple Methods is parsed by the Java Parser
+Given the class:
+package japa.parser.comments;
+
+public class ClassWithLineCommentsInMultipleMethods {
+
+    public void aMethod() {
+        // first comment
+        int a = 0; //second comment
+        // third comment
+        // fourth comment
+    }
+
+    public void anotherMethod() {
+        // a unique comment
+        // first comment
+        int a = 0; //second comment
+        // third comment
+        // fourth comment
+    }
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 9 contained comments
+Then the compilation unit has 0 orphan comments
+Then class 1 is not commented
+Then class 1 has 9 total contained comments
+Then method 1 in class 1 has 4 total contained comments
+Then method 1 in class 1 has 0 orphan comments
+Then block statement in method 1 in class 1 has 4 total contained comments
+Then block statement in method 1 in class 1 has 3 orphan comments
+Then method 2 in class 1 has 5 total contained comments
+Then method 2 in class 1 has 0 orphan comments
+Then block statement in method 2 in class 1 has 5 total contained comments
+Then block statement in method 2 in class 1 has 4 orphan comments
+
+Scenario: A Class With Line Comments in Multiple Methods is parsed by the Java Parser
+Given the class:
+package japa.parser.comments;
+
+public class ClassWithLineCommentInsideBlockComment {
+
+    /* comment to a method */
+    void foo(){}
+
+    /*// Line Comment put immediately after block comment
+
+    //// Comment debauchery
+
+    another orphan.
+    It spans over more lines */
+}
+When the class is parsed by the Java parser
+Then method 1 in class 1 is commented " comment to a method "
+Then class 1 orphan comment 1 is "// Line Comment put immediately after block comment
+
+                                  //// Comment debauchery
+
+                                  another orphan.
+                                  It spans over more lines "
+
+Scenario: A Class With Line Comments on Fields is parsed by the Java Parser
+Given the class:
+package japa.parser.comments;
+
+public class Issue43 {
+    //Case 1
+    private String field1 = null; //field1
+
+    //Case 2
+    private String field2
+            = null; //field2
+
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 4 contained comments
+Then class 1 has 4 total contained comments
+Then class 1 has 1 orphan comment
+Then class 1 orphan comment 1 is "Case 1"
+Then field 1 in class 1 contains 0 comments
+!--Then field 2 in class 1 contains 0 comments
+Then field 1 in class 1 is commented "field1"
+Then field 2 in class 1 is commented "Case 2"
+Then variable 1 value of field 2 in class 1 is commented "field2"
+
+Scenario: Another Class With Line Comments on Fields is parsed by the Java Parser
+Given the class:
+package japa.parser.comments;
+
+public class Issue43variant {
+    private String field1 = null; //field1
+
+    private String field2
+            = null; //field2
+
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 2 contained comments
+Then class 1 has 2 total contained comments
+Then field 1 in class 1 contains 0 comments
+!--Then field 2 in class 1 contains 0 comments
+Then field 1 in class 1 is commented "field1"
+Then variable 1 value of field 2 in class 1 is commented "field2"
+
+Scenario: A Class With Mixed Comments on Fields is parsed by the Java Parser
+Given the class:
+package japa.parser.javacc;
+public class Teste {
+    //line comment1
+    int a = 0; //line comment2
+    int b = 0; //line comment3
+    int c = 0; /* multi-line
+                * comment
+                */
+    int d = 0; /** multi-line
+                * javadoc */
+    int e = 0;
+}
+//final comment
+When the class is parsed by the Java parser
+Then the compilation unit has 6 contained comments
+Then class 1 has 5 total contained comments
+Then class 1 orphan comment 1 is "line comment1"
+Then field 1 in class 1 is commented "line comment2"
+Then field 2 in class 1 is commented "line comment3"
+Then field 3 in class 1 is not commented
+
+Scenario: Comment with a preceding line space is an orphan
+Given the class:
+//comment
+
+class A {}
+When the class is parsed by the Java parser
+Then the compilation unit orphan comment 1 is "comment"
+
+Scenario: Comment without a preceding line space is associated to class
+Given the class:
+//comment
+class A {}
+When the class is parsed by the Java parser
+Then class 1 is commented "comment"
+
+Scenario: Comments after Javadoc are attributed to the method if flag is active
+Given the class:
+class Issue40{
+    @GET
+    @Path("original")
+    /**
+    * Return the original user.
+    */
+    public User getOriginalUser(String userName) {
+        return userService.getOriginalUser(userName);
+    }
+}
+When the do not consider annotations as node start for code attribution is true on the Java parser
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is not an orphan
+Then method 1 in class 1 is commented "* Return the original user."
+
+Scenario: Comments after Javadoc are attributed to the method if flag is not active
+Given the class:
+class Issue40{
+    @GET
+    @Path("original")
+    /**
+    * Return the original user.
+    */
+    public User getOriginalUser(String userName) {
+        return userService.getOriginalUser(userName);
+    }
+}
+When the do not consider annotations as node start for code attribution is false on the Java parser
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is not an orphan
+Then type of method 1 in class 1 is commented "* Return the original user."
+
+Scenario: A Class With Line Comments is processed by the Java Parser
+Given the class:
+/*CompilationUnitComment*/
+package japa.parser.comments;
+
+public class ClassWithMixedStyleComments {
+    // line comment
+    int a = 0;
+    // another line comment
+    int b = 0;
+    // line comment
+    int c = 0;
+    /* multi-line
+       comment
+    */
+    int d = 0;
+    /**
+     * multi-line
+     */
+    int e = 0;
+    // final comment
+}
+When the class is parsed by the Java parser
+Then the compilation is commented "CompilationUnitComment"
+Then class 1 is not commented
+Then class 1 has 6 total contained comments
+Then class 1 orphan comment 1 is " final comment"
+Then field 1 in class 1 is commented " line comment"
+Then field 1 in class 1 contains 0 comments
+Then field 2 in class 1 is commented " another line comment"
+Then field 2 in class 1 contains 0 comments
+Then field 3 in class 1 is commented " line comment"
+Then field 3 in class 1 contains 0 comments
+Then field 4 in class 1 is commented " multi-line comment"
+Then field 4 in class 1 contains 0 comments
+Then field 5 in class 1 is commented " * multi-line"
+Then field 5 in class 1 contains 0 comments
+
+Scenario: A class with only an orphan comment is processed by the Java Parser
+Given the class:
+class A {
+    // orphan comment"
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is an orphan
+Then comment 1 in compilation unit parent is ClassOrInterfaceDeclaration
+
+Scenario: A class with only a class comment is processed by the Java Parser
+Given the class:
+/* Comment of the class */
+class A {
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is not an orphan
+Then comment 1 in compilation unit commented node is ClassOrInterfaceDeclaration
+
+Scenario: A Class With two comments at class level is processed by the Java Parser
+Given the class:
+/* Orphan comment */
+/* Comment of the class */
+class A {
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 2 contained comments
+Then comment 1 in compilation unit is an orphan
+Then the compilation unit orphan comment 1 is "Orphan comment"
+Then comment 2 in compilation unit is not an orphan
+Then comment 2 in compilation unit commented node is ClassOrInterfaceDeclaration
+
+Scenario: A Class has a comment associated to a field when processed by the Java Parser
+Given the class:
+class A {
+    int a = 0; // comment associated to the field
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is not an orphan
+Then comment 1 in compilation unit commented node is FieldDeclaration
+
+Scenario: A Class has a comment associated to a the literal when processed by the Java Parser
+Given the class:
+class A {
+    int a
+        = 0; // comment associated to the field
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is not an orphan
+Then comment 1 in compilation unit commented node is IntegerLiteralExpr
+
+Scenario: A Class with two line comment within a method when processed by the Java Parser
+Given the class:
+class A {
+    void foo() {
+        // a comment
+        int b; // another comment
+    }
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 2 contained comments
+Then comment 1 in compilation unit is an orphan
+Then comment 1 in compilation unit is "a comment"
+Then comment 2 in compilation unit is not an orphan
+Then comment 2 in compilation unit is "another comment"
+Then comment 2 in compilation unit commented node is ExpressionStmt
+
+Scenario: A Class with an inline comment inside a block comment is parsed by the Java Parser
+Given the class:
+class A {
+    /* A block comment that
+    // Contains a line comment
+    */
+    public static void main(String args[]) {
+    }
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit is "A block comment that // Contains a line comment"
+
+Scenario: A Class with an inline comment inbetween annotation a method declaration is parsed Java Parser
+Given the class:
+class A {
+    @Override
+    // Returns number of vowels in a name
+    public int countVowels(String name) {
+    }
+}
+When the class is parsed by the Java parser
+Then the compilation unit has 1 contained comments
+Then comment 1 in compilation unit commented node is PrimitiveType
+
+Scenario: We dump correctly two consecutive line-comments in a class
+Given the class:
+class A {
+  // foo
+  // bar
+  void aMethod(){}
+}
+When the class is parsed by the Java parser
+Then it is dumped to:
+class A {
+
+    // foo
+    // bar
+    void aMethod() {
+    }
+}
+
+Scenario: We dump correctly two consecutive line-comments in a method
+Given the class:
+class A {
+  void aMethod(){
+     // foo
+     // bar
+     int a;
+  }
+}
+When the class is parsed by the Java parser
+Then it is dumped to:
+class A {
+
+    void aMethod() {
+        // foo
+        // bar
+        int a;
+    }
+}
+
+Scenario: We dump correctly orphan comments in a for loop
+Given the class:
+class A {
+    public static List calcularResultadoFinal(List avaliacoes) throws SQLException, ClassNotFoundException{
+        for(Avaliacao avaliacao: avaliacoes){
+            // if(avaliacao.obterAprovacao()){
+            // avaliacao.setResultadoFinal("Aprovado");
+            // }else{
+            // avaliacao.setResultadoFinal("Reprovado");
+            // }
+            avaliacao.setEmAberto(false);
+            avaliacao.editar();
+        }
+        return avaliacoes;
+    }
+}
+When the class is parsed by the Java parser
+Then it is dumped to:
+class A {
+
+    public static List calcularResultadoFinal(List avaliacoes) throws SQLException, ClassNotFoundException {
+        for (Avaliacao avaliacao : avaliacoes) {
+            // if(avaliacao.obterAprovacao()){
+            // avaliacao.setResultadoFinal("Aprovado");
+            // }else{
+            // avaliacao.setResultadoFinal("Reprovado");
+            // }
+            avaliacao.setEmAberto(false);
+            avaliacao.editar();
+        }
+        return avaliacoes;
+    }
+}
+
+
+Running story com/github/javaparser/bdd/comment_parsing_scenarios.story
+
+(com/github/javaparser/bdd/comment_parsing_scenarios.story)
+Scenario: A Class With Line Comments is processed by the Comments Parser
+Given the class:
+package japa.parser.comments;
+
+public class ClassWithLineComments {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+        // third comment
+        // fourth comment
+    }
+}
+When the class is parsed by the comment parser
+Then the total number of comments is 4
+Then line comment 1 is " first comment"
+Then line comment 2 is " second comment"
+Then line comment 3 is " third comment"
+Then line comment 4 is " fourth comment"
+Then the line comments have the following positions:
+
+|beginLine|beginColumn|endLine|endColumn|
+|6|9|6|25|
+|7|18|7|35|
+|8|9|8|25|
+|9|9|9|26|
+
+
+Scenario: A Class With Block Comments is processed by the Comments Parser
+Given the class:
+package japa.parser.comments;
+
+/* comment which is not attributed to the class, it floats around as an orphan */
+/* comment to a class */
+public class ClassWithBlockComments {
+
+    /* comment to a method */
+    void foo(){};
+
+    /* comment put randomly in class:
+
+    another orphan.
+    It spans over more lines */
+
+}
+
+/* a comment lost inside a compilation unit. It is orphan, I am sure you got this one */
+When the class is parsed by the comment parser
+Then the total number of comments is 5
+Then block comment 1 is " comment which is not attributed to the class, it floats around as an orphan "
+Then block comment 2 is " comment to a class "
+Then block comment 3 is " comment to a method "
+Then block comment 4 is " comment put randomly in class:    another orphan.    It spans over more lines "
+Then block comment 5 is " a comment lost inside a compilation unit. It is orphan, I am sure you got this one  "
+Then the block comments have the following positions:
+
+|beginLine|beginColumn|endLine|endColumn|
+|3|1|3|82|
+|4|1|4|25|
+|7|5|7|30|
+|10|5|13|32|
+|17|1|17|89|
+
+
+Scenario: A Class With Javadoc Comments is processed by the Comments Parser
+Given the class:
+package japa.parser.comments;
+
+/** a proper javadoc comment */
+public class ClassWithJavadocComments {
+
+    void foo(){};
+
+
+}
+/** a floating javadoc comment */
+When the class is parsed by the comment parser
+Then the total number of comments is 2
+Then Javadoc comment 1 is " a proper javadoc comment "
+Then Javadoc comment 2 is " a floating javadoc comment "
+Then the Javadoc comments have the following positions:
+
+|beginLine|beginColumn|endLine|endColumn|
+|3|1|3|32|
+|10|1|10|34|
+
+
+Scenario: A Class With Orphan Comments is processed by the Comments Parser
+Given the class:
+package japa.parser.comments;
+
+/**Javadoc associated with the class*/
+public class ClassWithOrphanComments {
+    //a first comment floating in the class
+
+    //comment associated to the method
+    void foo(){
+        /*comment floating inside the method*/
+    }
+
+    //a second comment floating in the class
+}
+
+//Orphan comment inside the CompilationUnit
+When the class is parsed by the comment parser
+Then the total number of comments is 6
+Then line comment 1 is "a first comment floating in the class"
+Then line comment 2 is "comment associated to the method"
+Then line comment 3 is "a second comment floating in the class"
+Then block comment 1 is "comment floating inside the method"
+Then Javadoc comment 1 is "Javadoc associated with the class"
+
+Scenario: A Class With Orphan Comments is processed by the Comments Parser
+Given the class:
+/*CompilationUnitComment*/
+package japa.parser.comments;
+
+public class ClassWithMixedStyleComments {
+    // line comment
+    int a = 0;
+    // another line comment
+    int b = 0;
+    // line comment
+    int c = 0;
+    /* multi-line
+       comment
+    */
+    int d = 0;
+    /**
+     * multi-line
+     */
+    int e = 0;
+    // final comment
+}
+When the class is parsed by the comment parser
+Then the total number of comments is 7
+Then the line comments have the following positions:
+
+|beginLine|beginColumn|endLine|endColumn|
+|5|5|5|20|
+|7|5|7|28|
+|9|5|9|20|
+|19|5|19|21|
+
+Then the block comments have the following positions:
+
+|beginLine|beginColumn|endLine|endColumn|
+|1|1|1|27|
+|11|5|13|7|
+
+Then the Javadoc comments have the following positions:
+
+|beginLine|beginColumn|endLine|endColumn|
+|15|5|17|8|
+
+
+Scenario: A method containing two consecutive line comments is parsed correctly
+Given the class:
+class A {
+  void aMethod(){
+     // foo
+     // bar
+     int a;
+  }
+}
+When the class is parsed by the comment parser
+Then the total number of comments is 2
+Then line comment 1 is " foo"
+Then line comment 2 is " bar"
+
+Scenario: Comments from a file with an non-UTF-8 encoding are parsed correctly
+When read sample "ClassInLatin1" using encoding "ISO-8859-1"
+Then the total number of comments is 3
+Then line comment 2 is " A l'émej in piasì che sent dësgust."
+
+Scenario: Should not recognize /*/ as a comment
+Given the class:
+/*/
+class Foo {}
+When the class is parsed by the comment parser
+Then the total number of comments is 0
+Given the class:
+/*/
+class Foo {}
+Then the Java parser cannot parse it because of lexical errors
+
+Scenario: A Class With Character Literal is processed by the Comments Parser
+Given the class:
+class A {
+    /** comment1 */
+    private char c = '"';
+    /** comment2 */
+    private String d;
+}
+When the class is parsed by the comment parser
+Then the total number of comments is 2
+Then Javadoc comment 1 is "comment1"
+Then Javadoc comment 2 is "comment2"
+
+
+
+(AfterStories)
+
+Generating reports view to '/Users/StarRUC/git/javaparser/javaparser-testing/target/jbehave' using formats '[stats, console, html, junitscenarioreporter]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 2 stories (of which 0 pending) containing 33 scenarios (of which 0 pending)
+Tests run: 247, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.932 sec
+Running com.github.javaparser.bdd.DumpingTest
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story com/github/javaparser/bdd/dumping_scenarios.story
+
+(com/github/javaparser/bdd/dumping_scenarios.story)
+Scenario: When printing the instantiation we should use the right amount of spaces
+Given the class:
+public class A {
+    Object foo = new Object();
+}
+When the class is parsed by the Java parser
+Then it is dumped to:
+public class A {
+
+    Object foo = new Object();
+}
+
+Scenario: When printing the lambda expression we should use the right indentation
+Given the class:
+public class B {
+	Runnable runnable = ()-> System.out.println("running");
+    Consumer<Integer> consumer = i->{ i+=1; System.out.println(i);};
+}
+When the class is parsed by the Java parser
+Then it is dumped to:
+public class B {
+
+    Runnable runnable = () -> System.out.println("running");
+
+    Consumer<Integer> consumer =  i -> {
+        i += 1;
+        System.out.println(i);
+    };
+}
+
+Scenario: Dumping orphan comments in empty method
+Given the class:
+class A {
+    public void helloWorld(String greeting, String name) {
+        //sdfsdfsdf
+            //sdfds
+        /*
+                            dgfdgfdgfdgfdgfd
+         */
+    }
+}
+When the class is parsed by the Java parser
+Then it is dumped to:
+class A {
+
+    public void helloWorld(String greeting, String name) {
+    //sdfsdfsdf
+    //sdfds
+    /*
+                            dgfdgfdgfdgfdgfd
+         */
+    }
+}
+
+
+
+(AfterStories)
+
+Generating reports view to '/Users/StarRUC/git/javaparser/javaparser-testing/target/jbehave' using formats '[stats, console, html, junitscenarioreporter]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 3 stories (of which 0 pending) containing 36 scenarios (of which 0 pending)
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec
+Running com.github.javaparser.bdd.ManipulationTest
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story com/github/javaparser/bdd/manipulation_scenarios.story
+
+(com/github/javaparser/bdd/manipulation_scenarios.story)
+Scenario: A Node can only ever be equal to a class that extends Node
+Given a CompilationUnit
+Then is not equal to null
+Then is not equal to "Some String Value"
+
+Scenario: A BlockStmt can be created by a provided String
+Given a BlockStmt
+When is the String "{return x+y;}" is parsed by the JavaParser using parseBlock
+Then Statement 1 in BlockStmt toString is "return x + y;"
+
+Scenario: A Statement can be created by a provided String
+Given a Statement
+When is the String "x = x+y;" is parsed by the JavaParser using parseStatement
+Then Statement toString is "x = x + y;"
+
+Scenario: Adding declarations to a TryStmt it is set as the parent of all provided declarations
+Given a TryStmt
+Given a List of VariableDeclarations
+When the List of VariableDeclarations are set as the resources on TryStmt
+Then all the VariableDeclarations parent is the TryStmt
+
+Scenario: Adding null to a TryStmt it handles the outcome gracefully
+Given a TryStmt
+When null is set as the resources on TryStmt
+Then the TryStmt has no child nodes
+
+Scenario: Creating a complete CompilationUnit
+Given a CompilationUnit
+When the package declaration is set to "japa.parser.ast.manipulation"
+When a public class called "CreateClass" is added to the CompilationUnit
+When a public static method called "main" returning void is added to class 1 in the compilation unit
+When String varargs called "args" are added to method 1 in class 1
+When a BlockStmt is added to method 1 in class 1
+When System.out.println("Hello World!"); is added to the body of method 1 in class 1
+Then the expected source should be:
+package japa.parser.ast.manipulation;
+
+public class CreateClass {
+
+    public static void main(String... args) {
+        System.out.println("Hello World!");
+    }
+}
+
+Scenario: Change the name of a method to be uppercase
+Given a CompilationUnit
+When the following source is parsed:
+package japa.parser.ast.manipulation;
+
+public class UpdateMethod {
+
+    public void changeToUpperCase(){}
+
+    public void anotherMethodToChange(){}
+}
+When method 1 in class 1 has it's name converted to uppercase
+Then method 1 in class 1 has the name "CHANGETOUPPERCASE"
+
+Scenario: Change the name of all methods to be uppercase using a visitor
+Given a CompilationUnit
+When the following source is parsed:
+package japa.parser.ast.manipulation;
+
+public class UpdateMethod {
+
+    public void changeToUpperCase(){}
+
+    public void anotherMethodToChange(){}
+}
+Given a ChangeNameToUpperCaseVisitor
+When the ChangeNameToUpperCaseVisitor visits to compilation unit
+Then method 1 in class 1 has the name "CHANGETOUPPERCASE"
+Then method 2 in class 1 has the name "ANOTHERMETHODTOCHANGE"
+
+Scenario: Add int arguments to a method
+Given a CompilationUnit
+When the following source is parsed:
+package japa.parser.ast.manipulation;
+
+public class UpdateMethod {
+
+    public void changeToUpperCase(String param){}
+
+    public void anotherMethodToChange(){}
+}
+When method 2 in class 1 has an int parameter called "value" added
+Then method 1 in class 1 has 1 parameters
+Then method 2 in class 1 has 1 parameter
+Then method 2 in class 1 parameter 1 is type int called "value"
+
+Scenario: Add int arguments to all methods using a visitor
+Given a CompilationUnit
+When the following source is parsed:
+package japa.parser.ast.manipulation;
+
+public class UpdateMethod {
+
+    public void changeToUpperCase(String param){}
+
+    public void anotherMethodToChange(){}
+}
+Given a AddNewIntParameterCalledValueVisitor
+When the AddNewIntParameterCalledValueVisitor visits to compilation unit
+Then method 1 in class 1 has 2 parameters
+Then method 2 in class 1 has 1 parameter
+Then method 1 in class 1 parameter 2 is type int called "value"
+Then method 2 in class 1 parameter 1 is type int called "value"
+
+Scenario: Clone a compilation unit
+Given a CompilationUnit
+When the following source is parsed:
+package japa.parser.ast.manipulation;
+
+public class UpdateMethod {
+
+    public void changeToUpperCase(String param){}
+
+    public void anotherMethodToChange(){}
+}
+When the compilation unit is cloned
+Then method 1 in class 1 has the name "changeToUpperCase"
+Then method 1 in class 1 has 1 parameters
+Then method 2 in class 1 has 0 parameter
+
+
+
+(AfterStories)
+
+Generating reports view to '/Users/StarRUC/git/javaparser/javaparser-testing/target/jbehave' using formats '[stats, console, html, junitscenarioreporter]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 4 stories (of which 0 pending) containing 47 scenarios (of which 0 pending)
+Tests run: 68, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 sec
+Running com.github.javaparser.bdd.ParsingTest
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story com/github/javaparser/bdd/parsing_scenarios.story
+
+(com/github/javaparser/bdd/parsing_scenarios.story)
+Scenario: Test declaration as String for constructor on parsed class
+Given a CompilationUnit
+When the following source is parsed:
+class ClassWithAConstructor {
+    protected ClassWithAConstructor(int a, String b) throws This, AndThat, AndWhatElse {
+    }
+}
+Then constructor 1 in class 1 declaration as a String is "protected ClassWithAConstructor(int a, String b) throws This, AndThat, AndWhatElse"
+Then all nodes refer to their parent
+
+Scenario: Test declaration as String exclusing modifiers and throws for constructor on parsed class
+Given a CompilationUnit
+When the following source is parsed:
+class ClassWithAConstructor {
+    protected ClassWithAConstructor(int a, String b) throws This, AndThat, AndWhatElse {
+    }
+}
+Then constructor 1 in class 1 declaration short form as a String is "ClassWithAConstructor(int a, String b)"
+Then all nodes refer to their parent
+
+Scenario: Test declaration as String exclusing modifiers and throws for method on parsed class
+Given a CompilationUnit
+When the following source is parsed:
+class ClassWithAMethod {
+    /*comment1*/
+    final protected /*comment2*/ native List<String> /*comment2*/ aMethod(int a, String b) throws /*comment3*/ This, AndThat, AndWhatElse {
+
+    }
+}
+Then method 1 in class 1 declaration as a String is "protected final native List<String> aMethod(int a, String b) throws This, AndThat, AndWhatElse"
+Then all nodes refer to their parent
+
+Scenario: Test declaration as String exclusing modifiers and throws for method on parsed class
+Given a CompilationUnit
+When the following source is parsed:
+class ClassWithAMethod {
+    /*comment1*/
+    final protected /*comment2*/ native List<String> /*comment2*/ aMethod(int a, String b) throws /*comment3*/ This, AndThat, AndWhatElse {
+
+    }
+}
+Then method 1 in class 1 declaration as a String short form is "List<String> aMethod(int a, String b)"
+Then all nodes refer to their parent
+
+Scenario: The same class source is parsed by two different compilation units and should therefore be equal
+Given a CompilationUnit
+Given a second CompilationUnit
+When the following source is parsed:
+package japa.parser.comments;
+public class ClassEquality {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+    }
+}
+When the following sources is parsed by the second CompilationUnit:
+package japa.parser.comments;
+public class ClassEquality {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+    }
+}
+Then the CompilationUnit is equal to the second CompilationUnit
+Then the CompilationUnit has the same hashcode to the second CompilationUnit
+Then all nodes refer to their parent
+Then all nodes of the second compilation unit refer to their parent
+
+Scenario: Two different class sources are parsed by two different compilation units and should not be equal
+Given a CompilationUnit
+Given a second CompilationUnit
+When the following source is parsed:
+package japa.parser.comments;
+public class ClassEquality {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+    }
+}
+When the following sources is parsed by the second CompilationUnit:
+package japa.parser.comments;
+public class DifferentClass {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+    }
+}
+Then the CompilationUnit is not equal to the second CompilationUnit
+Then the CompilationUnit has a different hashcode to the second CompilationUnit
+Then all nodes refer to their parent
+Then all nodes of the second compilation unit refer to their parent
+
+Scenario: Classes that only differ by comments should not be equal or have the same hashcode
+Given a CompilationUnit
+Given a second CompilationUnit
+When the following source is parsed:
+package japa.parser.comments;
+public class ClassEquality {
+
+    public void aMethod(){
+        // first comment
+        int a=0; // second comment
+    }
+}
+When the following sources is parsed by the second CompilationUnit:
+package japa.parser.comments;
+public class ClassEquality {
+
+    public void aMethod(){
+        // first comment
+        int a=0;
+    }
+}
+Then the CompilationUnit is not equal to the second CompilationUnit
+Then the CompilationUnit has a different hashcode to the second CompilationUnit
+Then all nodes refer to their parent
+Then all nodes of the second compilation unit refer to their parent
+
+Scenario: A class with a colon in the annoation value is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+package japa.parser.ast;
+import org.junit.Test;
+public class Issue37 {
+    public static @interface SomeAnnotation {
+        String value();
+    }
+    // Parser bug: the type of this field
+    @SomeAnnotation("http://someURL.org/")
+    protected Test test;
+}
+Then field 1 in class 1 contains annotation 1 value is ""http://someURL.org/""
+Then all nodes refer to their parent
+
+Scenario: A class with a Lambdas is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+package bdd.samples;
+import java.util.stream.Stream;
+public class Lambdas {
+
+    public static void main(String[] args) {
+        // Lambda Runnable
+        Runnable r1 = () -> System.out.println("Hello world!");
+        Runnable r2 = () -> {};
+        Runnable r3 = () -> { System.out.println("Hello world two!"); };
+
+        Stream<CharSequence> stream = Stream.generate((Supplier<CharSequence>) () -> "foo");
+    }
+}
+Then lambda in statement 1 in method 1 in class 1 is called r1
+Then lambda in statement 2 in method 1 in class 1 is called r2
+Then lambda in statement 3 in method 1 in class 1 is called r3
+Then lambda in statement 1 in method 1 in class 1 body is "System.out.println("Hello world!");"
+Then lambda in statement 2 in method 1 in class 1 block statement is null
+Then lambda in statement 3 in method 1 in class 1 block statement is "System.out.println("Hello world two!");"
+Then lambda in statement 1 in method 1 in class 1 is parent of contained body
+Then lambda in statement 3 in method 1 in class 1 is parent of contained body
+Then all nodes refer to their parent
+Then lambda in method call in statement 4 in method 1 in class 1 body is ""foo";"
+
+Scenario: A class with parameterized Lambdas is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+package com.github.javapasrser.bdd.parsing;
+import java.util.function.Function;
+public class ParameterizedLambdas {
+    public static void main(String[] args) {
+        Function<Integer,String> f1 = (Integer i) -> String.valueOf(i);
+        Function<Integer,String> f2 = (i) -> String.valueOf(i);
+        Function<Integer,String> f3 = i -> String.valueOf(i);
+    }
+}
+Then lambda in statement 1 in method 1 in class 1 is parent of contained parameter
+Then lambda in statement 2 in method 1 in class 1 is parent of contained parameter
+Then lambda in statement 3 in method 1 in class 1 is parent of contained parameter
+Then lambda in statement 1 in method 1 in class 1 is parent of contained body
+Then lambda in statement 2 in method 1 in class 1 is parent of contained body
+Then lambda in statement 3 in method 1 in class 1 is parent of contained body
+Then lambda in statement 1 in method 1 in class 1 has parameters with non-null type
+Then lambda in statement 2 in method 1 in class 1 has parameters with non-null type
+Then lambda in statement 3 in method 1 in class 1 has parameters with non-null type
+
+Scenario: A class with multi-parameters Lambdas is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+package com.github.javapasrser.bdd.parsing;
+import java.util.function.Function;
+public class MultiParameterizedLambdas {
+    public static void main(String[] args) {
+        BiFunction<Integer, Integer, String> f = (a, b) -> String.valueOf(a) + String.valueOf(b);
+    }
+}
+Then lambda in statement 1 in method 1 in class 1 has parameters with non-null type
+
+Scenario: A class with a method reference is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+public class Person {
+
+    String name;
+    LocalDate birthday;
+
+    public void sortByAge(Person[] people){
+        Arrays.sort(people, Person::compareByAge);
+    }
+
+    public static int compareByAge(Person a, Person b) {
+        return a.birthday.compareTo(b.birthday);
+    }
+}
+Then method reference in statement 1 in method 1 in class 1 scope is Person
+Then method reference in statement 1 in method 1 in class 1 identifier is compareByAge
+Then all nodes refer to their parent
+
+Scenario: An interface with a default method is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+interface MyInterface {
+    default String doSomething(){
+        return "implementation in an interface!";
+    }
+
+    String doSomethingElse();
+}
+Then method 1 class 1 is a default method
+Then method 2 class 1 is not a default method
+Then all nodes refer to their parent
+
+Scenario: A lambda expression inside a conditional expression is parsed by the Java Parser
+Given a CompilationUnit
+When the following source is parsed:
+public class A{
+	static <T> Predicate<T> isEqual(Object targetRef) {
+	    return (null == targetRef)? Objects::isNull : object -> targetRef.equals(object);
+	}
+}
+Then ThenExpr in the conditional expression of the statement 1 in method 1 in class 1 is LambdaExpr
+
+Scenario: Parsing array creation expressions the positions are correct
+Given a CompilationUnit
+When the following source is parsed (trimming space):
+public class A{
+    int[][] a = new int[][]{};
+}
+When I take the ArrayCreationExpr
+Then the begin line is 2
+Then the begin column is 17
+Then the end line is 2
+Then the end column is 29
+
+
+
+(AfterStories)
+
+Generating reports view to '/Users/StarRUC/git/javaparser/javaparser-testing/target/jbehave' using formats '[stats, console, html, junitscenarioreporter]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 5 stories (of which 0 pending) containing 62 scenarios (of which 0 pending)
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 sec
+Running com.github.javaparser.bdd.VisitorTest
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story com/github/javaparser/bdd/visitor_scenarios.story
+
+(com/github/javaparser/bdd/visitor_scenarios.story)
+Scenario: A class that is replicated using a CloneVisitor should be equal to the source
+Given a CompilationUnit
+Given a second CompilationUnit
+When the following source is parsed:
+package japa.parser;
+public class ClassEquality {
+
+    public void aMethod(){
+        int a=0; // second comment
+    }
+}
+When the CompilationUnit is cloned to the second CompilationUnit
+Then the CompilationUnit is equal to the second CompilationUnit
+Then the CompilationUnit has the same hashcode to the second CompilationUnit
+
+Scenario: A classes variable name is changed to uppercase VoidVisitorAdapter
+Given a CompilationUnit
+Given a VoidVisitorAdapter with a visit method that changes variable names to uppercase
+When the following source is parsed:
+package japa.parser;
+public class ToUpperClass {
+    private int zero = 0;
+}
+When the CompilationUnit is visited by the to uppercase visitor
+Then the expected source should be:
+package japa.parser;
+public class ToUpperClass {
+    private int ZERO = 0;
+}
+
+Scenario: A class with a try statement is visited using by a VoidVisitorAdapter
+Given a CompilationUnit
+Given a VoidVisitorAdapter with a visit method and collects the variable names
+When the following source is parsed:
+package japa.parser;
+public class ToUpperClass {
+    public void aMethod(){
+        try {
+            int zero = 0;
+        }catch (Exception exception) {
+        }
+    }
+}
+When the CompilationUnit is visited by the variable name collector visitor
+Then the collected variable name is "zero;exception;"
+
+Scenario: A class with a try statement is visited using by a GenericVisitorAdapter
+Given a CompilationUnit
+Given a GenericVisitorAdapter with a visit method that returns variable names
+When the following source is parsed:
+package japa.parser;
+public class ToUpperClass {
+    public void aMethod(){
+        try {
+            int zero = 0;
+        }catch (Exception exception) {
+        }
+    }
+}
+When the CompilationUnit is visited by the visitor that returns variable names
+Then the return variable name is "zero"
+
+Scenario: A class with many different Java concepts is visited by a VoidVisitorAdaptor
+Given a CompilationUnit
+Given a VoidVisitorAdapter with a visit method that asserts sensible line positions
+When the "JavaConcepts.java" is parsed
+When the CompilationUnit is visited by the PositionTestVisitor
+Then the total number of nodes visited is 1326
+
+
+
+(AfterStories)
+
+Generating reports view to '/Users/StarRUC/git/javaparser/javaparser-testing/target/jbehave' using formats '[stats, console, html, junitscenarioreporter]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 6 stories (of which 0 pending) containing 67 scenarios (of which 0 pending)
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 sec
+
+Results :
+
+Tests run: 472, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ javaparser-testing ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/StarRUC/git/javaparser/javaparser-testing/target/javaparser-testing-2.2.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:report (jacoco-site) @ javaparser-testing ---
+[INFO] Skipping JaCoCo execution due to missing classes directory:/Users/StarRUC/git/javaparser/javaparser-testing/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources) @ javaparser-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 151 resources
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ javaparser-testing ---
+[INFO] Installing /Users/StarRUC/git/javaparser/javaparser-testing/target/javaparser-testing-2.2.3-SNAPSHOT.jar to /Users/StarRUC/.m2/repository/com/github/javaparser/javaparser-testing/2.2.3-SNAPSHOT/javaparser-testing-2.2.3-SNAPSHOT.jar
+[INFO] Installing /Users/StarRUC/git/javaparser/javaparser-testing/pom.xml to /Users/StarRUC/.m2/repository/com/github/javaparser/javaparser-testing/2.2.3-SNAPSHOT/javaparser-testing-2.2.3-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] javaparser-parent .................................. SUCCESS [  0.643 s]
+[INFO] javaparser-core .................................... SUCCESS [  8.470 s]
+[INFO] javaparser-testing ................................. SUCCESS [  9.354 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.635 s
+[INFO] Finished at: 2015-10-28T18:06:57-07:00
+[INFO] Final Memory: 31M/350M
+[INFO] ------------------------------------------------------------------------
